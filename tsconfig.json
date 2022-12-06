@@ -1,0 +1,34 @@
+{
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "lib": ["es2019", "esnext", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "rootDir": "./src",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2016",
+    "baseUrl": ".",
+    "paths": {
+      "@isdin-todo-domain": ["src/libs/todo/domain/index.ts"],
+      "@isdin-todo-infrastructure-storage": [
+        "src/libs/todo/infrastructure/storage/index.ts"
+      ],
+      "@isdin-todo-presentation": ["src/todo/presentation/index.ts"],
+      "@isdin-todo-use-cases": ["src/libs/todo/use-cases/index.ts"]
+    }
+  }
+}
